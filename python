@@ -1,0 +1,9 @@
+import math as m
+A,B=map(int,input().split())
+if (A/B)-int(A/B) < 0.5:
+    x= m.floor(A/B)
+else:
+    x= m.ceil(A/B)
+print(f'floor {A} / {B} = {m.floor(A/B)}')
+print(f'ceil {A} / {B} = {m.ceil((A/B))}')
+print(f'round {A} / {B} = {x}')
